@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+html {
+  --cOrangeColor: #fd6e0a;
+  box-sizing: border-box;
+}
+body {
+  color: black;
+  box-sizing: inherit;
+  font-family: "Open Sans", sans-serif;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+p {
+  color: gray;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+/* h5{
+    font-size: 1.2rem;
+} */
+.commonSection {
+  margin-block: 5rem;
+}
+.commonWrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.btn {
+  background: #fd6e0a;
+  color: white;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  gap: 5px;
+}
+
+.navWrapper.commonWrapper {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menus {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+nav.HeaderSection {
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background: #fff8f3;
+}
+
+section.hero {
+  background: #fff8f3;
+  background-image: url('./images/header_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.heroWrapper.commonWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media screen and (max-width: 800px) {
+  .heroWrapper.commonWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+img.developerImage {
+  position: absolute;
+  left: 1%;
+  height: 100%;
+}
+
+.heroDetails {
+  display: grid;
+  grid-row: auto;
+  align-content: center;
+  gap: 1rem;
+}
+
+img.heroImage {
+  width: 100%;
+
+}
+@media screen and (max-width: 800px) {
+  .heroWrapper.commonWrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+  img.heroImage {
+    margin: auto;
+    width: 320px;
+  }
+  img.developerImage {
+    display: none;
+  }
+}
+
+.heroBtns {
+  display: flex;
+  gap: 1rem;
+}
+
+span > img {
+  width: 1rem;
+}
+
+.aboutMeWrapper {
+  background: #fff8f3;
+  padding: 10%;
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.aboutMeInfos {
+  display: flex;
+  gap: 3rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aboutMeEachInfo {
+  text-align: center;
+}
+
+.aboutMeContainer p {
+  text-align: center;
+}
+
+section.skills {
+  justify-content: center;
+  gap: 4rem;
+}
+
+.skillsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  overflow: hidden;
+}
+
+.SkillsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  width: 70%;
+}
+
+.allSkills {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.eachSkills {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: #fff8f3;
+  padding: 2rem;
+}
+.eachSkills p {
+  width: 95%;
+  max-width: 254px;
+}
+
+.eachSkills img {
+  width: 2rem;
+}
+
+.resumeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.personalInfos {
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+}
+
+@media screen and (max-width: 600px) {
+  .personalInfos {
+    flex-direction: column;
+  }
+  .educationInfos {
+    border: none;
+    padding-bottom: 1rem;
+  }
+}
+
+.educationInfos {
+  display: flex;
+  /* width: 100%; */
+  min-width: 240px;
+  flex-direction: column;
+  gap: 1rem;
+}
+.educationInfos h4 {
+  color: #fd6e0a;
+}
+
+.eachEducatonInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 70%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.experienceInfos {
+  display: flex; /* width: 100%; */
+  min-width: 240px;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.experienceInfos h4 {
+  color: #fd6e0a;
+}
+.eachExperienceInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 70%;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid gray;
+}
+
+.eachExperienceInfo p {
+  color: #6e6e6e;
+}
+
+footer.footerSection {
+  padding-block: 6rem;
+  background: #fff8f3;
+}
+
+.footerwrapper {
+  display: flex;
+  gap: 3rem;
+}
+
+.footerInfos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerInfos p {
+  color: gray;
+  width: 70%;
+  text-align: justify;
+}
+
+form.footerForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerForm input {
+  border: none;
+  padding: 11px;
+  outline: none;
+}
+
+.footerForm textarea {
+  border: none;
+  padding: 11px;
+  outline: none;
+}
+
+.footerForm .btn {
+  display: inline;
+  border: none;
+  outline: none;
+  padding-block: 10px;
+}
+@media screen and (max-width: 600px) {
+  .footerwrapper {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
